@@ -2,7 +2,7 @@
 
 TARGETDIR=$1
 
-[[ $BASE_DIR != *sdk ]] && echo 'dada'
+[[ $BASE_DIR != *sdk ]] && echo 'not SDK build ... nothing to do' && exit
 
 RUN_DIR=$TARGETDIR/../buildroot_run
 echo "[[[[[[[[ 'run dir is:'$RUN_DIR"
