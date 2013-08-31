@@ -20,6 +20,8 @@ cd $RUN_DIR
 sudo mkdir rony
 sudo mount --bind /home/maint/Developer/rcaf/mac_dev rony
 
+sudo cp rony/config.json opt/rainbow/config.json
+
 echo "[[[[[[[[ chrooting ..."
 sudo chroot . /bin/ash
 
